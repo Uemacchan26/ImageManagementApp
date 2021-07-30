@@ -1,0 +1,12 @@
+<h1>ログイン</h1>
+<% if flash[:alert].present? %>
+  <p style="color: red;"><%= flash[:alert] %></p>
+<% end %>
+
+<%= form_for(:session, url: login_path) do |f| %>
+  <%= f.label :id, 'ユーザーID' %>
+  <%= f.text_field :id %><br>
+  <%= f.label :password, 'パスワード' %>
+  <%= f.text_field :password %><br><br>
+  <%= f.submit "ログインする" %>
+<% end %>

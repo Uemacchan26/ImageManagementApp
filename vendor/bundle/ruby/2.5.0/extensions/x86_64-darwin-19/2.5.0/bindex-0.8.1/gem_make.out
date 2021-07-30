@@ -1,0 +1,15 @@
+current directory: /Users/noin11124/app/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/noin11124/.rbenv/versions/2.5.7/bin/ruby -r ./siteconf20210730-26383-ybqr8v.rb extconf.rb
+creating Makefile
+
+current directory: /Users/noin11124/app/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/noin11124/app/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/noin11124/app/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20210730-26383-1wtv4yg/skiptrace/internal

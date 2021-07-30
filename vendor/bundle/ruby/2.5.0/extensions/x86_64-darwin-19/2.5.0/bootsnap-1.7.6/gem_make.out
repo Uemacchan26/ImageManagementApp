@@ -1,0 +1,15 @@
+current directory: /Users/noin11124/app/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.7.6/ext/bootsnap
+/Users/noin11124/.rbenv/versions/2.5.7/bin/ruby -r ./siteconf20210730-26383-1ftkczh.rb extconf.rb
+creating Makefile
+
+current directory: /Users/noin11124/app/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.7.6/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/noin11124/app/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.7.6/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/noin11124/app/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.7.6/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20210730-26383-ex4hnb/bootsnap

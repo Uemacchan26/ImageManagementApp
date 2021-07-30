@@ -1,0 +1,12 @@
+current directory: /Users/noin11124/app/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /Library/Ruby/Site/2.6.0 -r ./siteconf20210730-92425-19fqotn.rb extconf.rb
+creating Makefile
+
+current directory: /Users/noin11124/app/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= clean
+
+current directory: /Users/noin11124/app/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\=
+make: *** No rule to make target `/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin19/ruby/config.h', needed by `cruby.o'.  Stop.
+
+make failed, exit code 2
