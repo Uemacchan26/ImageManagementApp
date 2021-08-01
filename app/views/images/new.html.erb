@@ -1,0 +1,10 @@
+<%= link_to "ログアウト", logout_path, method: :delete %>
+<h1>写真アップロード</h1>
+<%= render partial: 'shared/alert' %>
+<%= form_for Image.new do |f| %>
+  <%= f.label :title, 'タイトル' %>
+  <%= f.text_field :title, value: "" %><br>
+  <%= f.file_field :image_file, {accept: 'image/*'} %><br>
+  <%= f.submit 'アップロード' %>
+<% end %>
+<%= link_to "キャンセル", images_path %>
