@@ -1,0 +1,5 @@
+<% if flash[:errors].present? %>
+  <% flash[:errors].split(",").each do |error| %>
+    <p style="color: red;"><%= error %></p>
+  <% end %>
+<% end %>
