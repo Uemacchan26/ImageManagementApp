@@ -1,14 +1,8 @@
-<h1>写真一覧</h1>
-<table>
-  <tbody>
-  <% if @images.present? %>
-    <% @images.each do |image| %>
-      <tr>
-        <td><%= image.title %></td>
-      </tr>
-    <% end %>
-  <% end %>
-  </tbody>
-</table>
-<%= link_to "写真アップロード画面へ", images_index_path %><br>
 <%= link_to "ログアウト", logout_path, method: :delete %>
+<h1>写真一覧</h1>
+<%= link_to "写真アップロード画面へ", new_image_path %><br>
+<% if @images.present? %>
+  <% @images.each do |image| %>
+    <%= image.title %><br><%= image_tag image.title %>
+  <% end %>
+<% end %>
