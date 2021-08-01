@@ -4,13 +4,19 @@ class SessionsController < ApplicationController
 
   def create
     check_session
-    redirect_to login_path, alert: @errors.join("\n") and return if @errors.present?
+    if @errors.present?
+      flash[:errors] = @errors.join(",")
+      redirect_to login_path and return
+    end
 
     user = User.find_by(id: params[:session][:id], password: params[:session][:password])
-    redirect_to login_path, alert: "ユーザーIDとパスワードが一致するユーザーが存在しません" and return if user.blank?
+    if user.blank?
+      flash[:errors] = "ユーザーIDとパスワードが一致するユーザーが存在しません"
+      redirect_to login_path and return
+    end
 
     log_in user
-    redirect_to images_index_path
+    redirect_to images_path
   end
 
   def destroy
