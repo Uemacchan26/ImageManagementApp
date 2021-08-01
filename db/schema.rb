@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 2021_07_29_201914) do
   create_table "images", force: :cascade do |t|
     t.bigint "user_id"
     t.string "title"
-    t.string "image_path"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_images_on_user_id"
